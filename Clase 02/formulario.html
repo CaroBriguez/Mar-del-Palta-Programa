@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <center><table border="1" > 
+        <thead>
+            <tr>
+                <th><img src="https://www.mardelplata.gob.ar/sites/default/files/xsubir,P20a,P20la,P20web.png.pagespeed.ic.wusFZtPIuP.webp" alt="img" width="200"></th>
+                <th>Nombre</th>
+            </tr>
+            <tr>
+                <th colspan="2">DATOS PERSONALES</th>
+            </tr>
+        </thead>
+        <form action="formulario.html">
+        <tbody>
+            <tr>
+                <td><label for="Fnombre">Nombre</label></td>
+                <td><input type="text" name = "Fnombre"></td>
+            </tr>
+            <tr><td><label for="Fapellido">Apellido</label></td>
+                <td><input type="text" name= "Fapellido"></td>
+            </tr>
+            <tr>
+                <td><label for="Fpais">Pais</label></td>
+                <td><input type="text" name="Fpais" id="Fpais"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Femail">Email</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label for="Ftrabajo">¿Trabaja?</label></td>
+                <td><input type="radio" name="Ftrabajo" id="Ftrabajo">SI
+            <br><input type="radio" name="Ftrabajo">NO</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr><th colspan="2"><button>Enviar</button></th></tr>
+        </tfoot>
+        </form>
+    </table></center>
+       
+</body>
+</html>
