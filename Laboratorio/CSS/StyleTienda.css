@@ -50,6 +50,7 @@ nav {
 }
 
 main{
+    display: flex;
     height: 100vh;
     clear: both;
     width: 80%;
@@ -57,17 +58,31 @@ main{
     background-color: #75a5ff6c;
     font-weight: bold;
     float: right;
+    overflow: auto;
+}
+main p{
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #7e8fa8;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
 }
 section{
+    display: flex;
     padding: 20px;
+    flex-flow: row wrap;
 }
+
+
 section .producto{
     max-width: 33%;
     border:solid rgb(200 200 200);
     border-radius: 20px;
     background-color: #ffddea;
-    float:left;
     margin: 50px;
+    
 }
 
 section .producto img{ 
@@ -113,22 +128,24 @@ aside section nav ul {
 aside section nav a {
     text-decoration: none;
     font-weight: bold;
+    color: #551a8b;
 }
 
 aside section nav a:hover{
     color: #ffffff;
 } 
 
+
 aside section .form{
     width: 100%;
     padding: 3px;
     border: solid 1px;
-    background-color:#ffddea;
+    background-color:#fcffdd;
     border-radius: 4px;
 }
 aside section .form h2{
     text-align: center;
-    color: #fa155a;
+    color: #9643f5;
     padding: 4px;
 }
 aside section .form input, aside .form textarea{
@@ -149,6 +166,7 @@ aside section .form button{
     height: 25px;
 }
 footer{ 
+    display: flex;
     clear: both;
     margin: 0px;
     width: 100%;
