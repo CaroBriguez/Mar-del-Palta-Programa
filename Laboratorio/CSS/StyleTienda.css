@@ -180,12 +180,31 @@ footer div {
     font-family:'Source Code Pro', monospace ;
     float: left;
     font-weight: bold;
+    color: #ffffff;
 }
 footer div a{
     text-decoration: none;
     font-size: 15px;
-    color: #000000;
+    color: #ffffff;
 }
 footer div a:hover{
     color: #ffffff;
+}
+
+.icono{
+    right: 10px;
+    bottom: 10px;
+}
+
+.icono button{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 100%; border: solid green; 
+
+}
+
+.icono button i{
+    color: white;;
+    font-size: 30px;
 }
