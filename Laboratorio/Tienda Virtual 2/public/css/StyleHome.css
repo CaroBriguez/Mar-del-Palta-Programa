@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+}
+
+.ahora12 img{
+    max-width: 100%;
+    padding: 15px 0;
+}
+
+.disp{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    border-radius: 1%;
+    box-shadow: 1px 1px #e9e8e8;
+    max-width: 100%;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.disp img{
+    width: 40%;
+}
+
+.disp p{
+    padding: 10px;
+}
+
+.container-pagos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.envio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width:800px){
+    .disp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+        align-content: center;
+        align-items: center;
+
+    }
+}
