@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+}
+
+.menu{
+    display: flex;
+}
+
+header .menu-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+header .logo{
+    width: 18%;
+    margin-left: 2%;
+}
+
+.menu-opciones{
+    text-decoration: none;
+    color: black ;
+    margin: 7px;
+    font-weight: bold;
+}
+
+.menu-opciones:hover{
+    color: rgb(100, 94, 94);
+}
+
+.boton-anadir{
+    background-color:white;
+    border: white;
+} 
+
+.boton-anadir:hover{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.search{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    border-color: black;
+}
+
+/* header form {
+    display: flex;
+    
+    background-color: #27cd40;
+} */
+
+body{
+    padding: 10px;
+    height: 85%;
+    overflow-x: hidden;
+}
+
+.icono{
+    z-index: 20;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+}
+
+.icono button{
+    height: 50px;
+    width: 50px;
+    background-color: #27cd40;
+    border-radius: 100% ;
+    border: solid #27cd40;
+}
+.icono button :hover{
+    cursor: pointer;
+}
+.icono button i{
+    color: white;
+    font-size: 30px;
+}
+
+.icono button i:hover{
+    cursor: pointer;
+    font-size: 35px;
+}
+
+footer{
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    height: 15rem;
+    font-size: 14px;
+    background-color: #f9f9f9 ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.contacto , .servicio{
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.contacto ul li,.servicio ul li{
+    margin: 15px;
+    font-size: 17px;
+}
+
+footer .container .servicio ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+footer .container .servicio ul li a:hover{
+    font-size: 17.5px;
+}
+
+#title{
+    font-weight:bold;
+    font-size: 17px;
+    color: #e00023;
+}
+
+
+.p{
+    color: rgb(115, 115, 115);
+}
+
+.mapa{
+    margin: 4%;
+}
+
+.back{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 100% ;
+    border: solid #000000;
+    color: black;
+}
+
+.back :hover{
+    cursor: pointer;
+}
+
+
+@media(min-width:900px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+        text-align: left;
+    }
+    
+    .contacto , .servicio{
+        width: 30%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    
+}
+
+.ahora12 img{
+    max-width: 100%;
+    padding: 15px 0;
+}
+
+.disp{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    border-radius: 1%;
+    box-shadow: 1px 1px #e9e8e8;
+    max-width: 100%;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.disp img{
+    width: 40%;
+}
+
+.disp p{
+    padding: 10px;
+}
+
+.container-pagos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.envio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width:800px){
+    .disp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+        align-content: center;
+        align-items: center;
+
+    }
+}
