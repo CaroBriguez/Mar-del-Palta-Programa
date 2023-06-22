@@ -26,7 +26,7 @@ main section{
 main p{
     flex-wrap: nowrap;
     width: 100%;
-    background-color: #69d6a957;
+    background-color: #f3a7cd57;
     text-align: center;
     border-radius: 10px;
     margin: 3px;
@@ -73,7 +73,7 @@ aside section nav ul, aside section nav a{
     list-style: none;
     text-decoration: none;
     font-weight: bold;
-    color: #dfa427;
+    color: #c72d53;
     font-size: 18px;
 }
 
@@ -99,6 +99,9 @@ aside section nav a:hover{
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
+    }
+    main section .producto img{
+        height: 50vh;
     }
 }
 

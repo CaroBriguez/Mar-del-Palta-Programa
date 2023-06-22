@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap');
+
+
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Open Sans",sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 
@@ -15,7 +19,7 @@ header{
     width: 100%;
     align-items: center;
     font-size: 18px;
-    background-color: #a9f3b570;
+    background-color: #e5ee6bb2;
     margin-bottom: 15px;
 }
 
@@ -41,7 +45,7 @@ header .logo:hover{
 }
 .menu-opciones{
     text-decoration: none;
-    color: #dfa427;
+    color: #c72d53;
     margin: 7px;
     font-weight: bold;
 }
@@ -108,10 +112,11 @@ body{
 
 .inicio{
     font-weight: bold;
+    font-family: 'Ysabeau SC', sans-serif;
 }
 
 .inicio, .para{
-    background-color: #a9f3b533;
+    background-color: #f3a7cd2c;
     padding: 3%;
     width: 100%;
     text-align: center;
@@ -122,7 +127,7 @@ body{
     font-size: 26px;
     font-weight: bold;
     padding: 5px;
-    color: #dfa427;
+    color: #c72d53;
 }
 .para .descrip{
     padding: 5px;
@@ -177,7 +182,7 @@ footer .container .servicio ul li a:hover{
 #title{
     font-weight:bold;
     font-size: 17px;
-    color: #dfa427;
+    color: #c72d53;
 }
 
 .p{
@@ -265,8 +270,9 @@ footer .container .servicio ul li a:hover{
     width:20%;
     margin-left: 35%;
     margin-right: 35%;
-    background-color: #dfa427;
-    color: #ffffff;
+    background-color: #e5ee6bb2;
+    color: #c72d53;
+    font-weight: bold;
     
 }
 
