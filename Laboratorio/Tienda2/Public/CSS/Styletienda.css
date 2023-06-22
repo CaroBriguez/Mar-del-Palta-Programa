@@ -47,6 +47,7 @@ header .logo:hover{
     text-decoration: none;
     color: #c72d53;
     margin: 7px;
+    font-family: "Open Sans",sans-serif;
     font-weight: bold;
 }
 
@@ -146,6 +147,7 @@ footer{
     margin-top: 100px;
     height: 15rem;
     font-size: 14px;
+    font-family: "Open Sans",sans-serif;
     background-color: #f9f9f9 ;
 }
 
@@ -168,10 +170,12 @@ ul{
 .contacto ul li,.servicio ul li{
     margin: 15px;
     font-size: 17px;
+    font-family: "Open Sans",sans-serif;
 }
 
 footer .container .servicio ul li a{
     text-decoration: none;
+    font-family: "Open Sans",sans-serif;
     color:black;
 }
 
@@ -180,6 +184,7 @@ footer .container .servicio ul li a:hover{
 }
 
 #title{
+    font-family: open sans;
     font-weight:bold;
     font-size: 17px;
     color: #c72d53;
@@ -233,6 +238,7 @@ footer .container .servicio ul li a:hover{
 
 .contact nav a{
     text-decoration: none;
+    font-family: "Open Sans",sans-serif;
     font-weight: bold;
     color:black
 }
