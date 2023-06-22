@@ -213,7 +213,7 @@ footer .container .servicio ul li a:hover{
     font-family: Open sans-serif;
 }
 .contact nav{
-    width:60%;
+    width:30%;
     margin-top: 2%; 
     padding: 2%;
 }
@@ -347,6 +347,7 @@ footer .container .servicio ul li a:hover{
     }
 }
 
+
 @media(min-width:600px){
     header .menu-header{
         display: flex;
@@ -354,7 +355,9 @@ footer .container .servicio ul li a:hover{
         width: 80%;
         align-items: center;
         justify-content: flex-end;
-    }
+    }}
+
+    @media(min-width:850px){
     .contact{
         display: flex;
         flex-direction: row;
