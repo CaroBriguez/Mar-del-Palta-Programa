@@ -104,7 +104,7 @@ body{
     font-size: 35px;
 }
 
-.inicio{
+.inicio, .para{
     background-color: #a9f3b533;
     padding: 3%;
     width: 100%;
@@ -112,7 +112,16 @@ body{
     text-align:center;
 }
 
-
+.para .titulop{
+    font-size: 26px;
+    font-weight: bold;
+    padding: 5px;
+    color: #dfa427;
+}
+.para .descrip{
+    padding: 5px;
+    font-size: 18px;
+}
 .inicio img{
     max-width:30% ;
     padding: 2%;
