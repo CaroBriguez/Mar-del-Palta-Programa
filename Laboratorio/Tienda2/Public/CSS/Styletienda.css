@@ -15,6 +15,7 @@ header{
     width: 100%;
     align-items: center;
     font-size: 18px;
+    background-color: #ffd725a8;
 }
 
 .menu{
@@ -37,7 +38,7 @@ header .logo{
 
 .menu-opciones{
     text-decoration: none;
-    color: black ;
+    color: #8b25ffa8;
     margin: 7px;
     font-weight: bold;
 }
@@ -47,8 +48,8 @@ header .logo{
 }
 
 .boton-anadir{
-    background-color:white;
-    border: white;
+    background-color:#ffd725a8;
+    border: #ffd725a8;
 } 
 
 .boton-anadir:hover{
@@ -60,6 +61,7 @@ header .logo{
     margin: 10px;
     border-radius: 10px;
     padding: 5px;
+    background-color: #ffd7251e;
     border-color: black;
 }
 
@@ -146,7 +148,7 @@ footer .container .servicio ul li a:hover{
 #title{
     font-weight:bold;
     font-size: 17px;
-    color: #e00023;
+    color: #dfa427;
 }
 
 
