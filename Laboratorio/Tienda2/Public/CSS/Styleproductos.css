@@ -73,11 +73,13 @@ aside section nav ul, aside section nav a{
     list-style: none;
     text-decoration: none;
     font-weight: bold;
+    color: #dfa427;
+    font-size: 18px;
 }
 
 aside section nav a:hover{
     color: #968a8a;
-    font-size: 18px;
+    font-size: 22px;
 } 
 
 @media(min-width:600px){
@@ -99,3 +101,12 @@ aside section nav a:hover{
         flex-flow: row wrap;
     }
 }
+
+@media(min-width:300px) and (max-width:600px){
+
+    aside section nav ul, aside section nav a{
+        display: flex;
+        width: 100;
+        font-size: 12px;
+        }
+    }
