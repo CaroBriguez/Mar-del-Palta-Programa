@@ -185,9 +185,6 @@ footer .container .servicio ul li a:hover{
     color: rgb(115, 115, 115);
 }
 
-.mapa{
-    margin: 2%;
-}
 
 .back{
     height: 30px;
@@ -211,6 +208,9 @@ footer .container .servicio ul li a:hover{
     flex-direction: column;
     max-width: 100%;
     font-family: Open sans-serif;
+}
+.mapa{
+    margin-left: 20%;
 }
 .contact nav{
     width:30%;
@@ -237,6 +237,8 @@ footer .container .servicio ul li a:hover{
     background-color: #a9f3b533;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
     width: 70%;
     margin: 2%;
 }
