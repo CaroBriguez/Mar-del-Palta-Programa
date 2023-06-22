@@ -15,7 +15,8 @@ header{
     width: 100%;
     align-items: center;
     font-size: 18px;
-    background-color: #ffd725a8;
+    background-color: #a9f3b570;
+    margin-bottom: 15px;
 }
 
 .menu{
@@ -38,7 +39,7 @@ header .logo{
 
 .menu-opciones{
     text-decoration: none;
-    color: #8b25ffa8;
+    color: #dfa427;
     margin: 7px;
     font-weight: bold;
 }
@@ -48,8 +49,8 @@ header .logo{
 }
 
 .boton-anadir{
-    background-color:#ffd725a8;
-    border: #ffd725a8;
+    background-color:#a9f3b570;
+    border: #a9f3b570;
 } 
 
 .boton-anadir:hover{
@@ -75,7 +76,6 @@ body{
     padding: 10px;
     height: 85%;
     overflow-x: hidden;
-    background-color: rgba(137, 43, 226, 0.123);
 }
 
 .icono{
@@ -103,6 +103,20 @@ body{
 .icono button i:hover{
     cursor: pointer;
     font-size: 35px;
+}
+
+.inicio{
+    background-color: #a9f3b533;
+    padding: 3%;
+    width: 100%;
+    text-align: center;
+    text-align:center;
+}
+
+
+.inicio img{
+    max-width:30% ;
+    padding: 2%;
 }
 
 footer{
