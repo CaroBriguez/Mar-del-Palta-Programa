@@ -36,7 +36,9 @@ header .logo{
     width: 18%;
     margin-left: 2%;
 }
-
+header .logo:hover{
+    transform: scale(1.07) ;
+}
 .menu-opciones{
     text-decoration: none;
     color: #dfa427;
@@ -102,6 +104,10 @@ body{
 .icono button i:hover{
     cursor: pointer;
     font-size: 35px;
+}
+
+.inicio{
+    font-weight: bold;
 }
 
 .inicio, .para{
@@ -180,7 +186,7 @@ footer .container .servicio ul li a:hover{
 }
 
 .mapa{
-    margin: 4%;
+    margin: 2%;
 }
 
 .back{
@@ -200,6 +206,68 @@ footer .container .servicio ul li a:hover{
     cursor: pointer;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    font-family: Open sans-serif;
+}
+.contact nav{
+    width:60%;
+    margin-top: 2%; 
+    padding: 2%;
+}
+
+.contact nav li{
+    padding:2%;
+    font-size: 18px;
+}
+
+.contact nav i{
+    margin: 4px
+}
+
+.contact nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black
+}
+
+.contact .formu{
+    background-color: #a9f3b533;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 2%;
+}
+
+.contact .formu input, .formu select{
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+    width: 40%;
+}
+.contact .formu textarea{
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+    width: 85%;
+}
+
+.contact .formu button{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:20%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: #dfa427;
+    color: #ffffff;
+    
+}
 
 @media(min-width:900px){
     header{
@@ -279,12 +347,40 @@ footer .container .servicio ul li a:hover{
     }
 }
 
-@media(min-width:600px){}
+@media(min-width:600px){
     header .menu-header{
         display: flex;
         flex-wrap: wrap;
         width: 80%;
         align-items: center;
         justify-content: flex-end;
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;}
     
+    .contact nav{
+        width:30%;
+        margin-top: 2%; 
+        padding: 2%;
+        }
+        
+    .contact nav li{
+        padding:2%;
+        font-size: 16px;
+        }
+    .contact .formu{
+        background-color: #a9f3b533;
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 2%;
+        }
+    .mapa{
+        display: flex;
+        margin: 2%;
+        
+    }  
+        
     }

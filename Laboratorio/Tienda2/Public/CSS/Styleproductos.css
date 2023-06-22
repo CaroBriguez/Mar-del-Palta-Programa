@@ -26,7 +26,7 @@ main section{
 main p{
     flex-wrap: nowrap;
     width: 100%;
-    background-color: #69d6a993;
+    background-color: #69d6a957;
     text-align: center;
     border-radius: 10px;
     margin: 3px;
@@ -82,7 +82,7 @@ aside section nav a:hover{
     font-size: 22px;
 } 
 
-@media(min-width:600px){
+@media(min-width:800px){
     section .producto{
         display: flex;
         flex-direction: column;
@@ -102,11 +102,15 @@ aside section nav a:hover{
     }
 }
 
-@media(min-width:300px) and (max-width:600px){
+@media(max-width:600px){
 
     aside section nav ul, aside section nav a{
         display: flex;
         width: 100;
         font-size: 12px;
         }
+    main section .producto img{
+        max-width: 40%;
+        height: 30vh;
+    }
     }
