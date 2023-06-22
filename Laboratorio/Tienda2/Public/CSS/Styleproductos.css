@@ -20,7 +20,7 @@ main section{
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 main p{
@@ -38,9 +38,10 @@ section .producto{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     gap: 8px;
     align-items: center;
-    width: 50%;
+    width: 100%;
     font-size: 18px;
     padding: 2%;
     font-weight: bold;
@@ -78,3 +79,23 @@ aside section nav a:hover{
     color: #968a8a;
     font-size: 18px;
 } 
+
+@media(min-width:600px){
+    section .producto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+        width: 50%;
+        font-size: 18px;
+        padding: 2%;
+        font-weight: bold;
+    }
+    main section{ 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+}
