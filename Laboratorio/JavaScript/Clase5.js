@@ -6,6 +6,7 @@
 
 const prompt=require("prompt-sync")({sigint:true});
 
+let palabra = prompt("Ingrese el criterio a buscar")
 let Arraypersonas = []
 const personas = (nombre,lastname,edad,direccion,status,orientacion) => {
     let person = {
@@ -40,8 +41,17 @@ let DatapersonasFilter = Arraypersonas.filter((personas) =>{
 
 console.table(DatapersonasFilter)
 console.log("**************");
+console.log("**************");
 console.log(Arraypersonas)
 
 /* 2) */
 
-let promedioEdades 
+const promedioEdades =() =>{
+    let suma = 0;
+    Arraypersonas.forEach((element)=>{
+        suma = suma + edad;
+    });
+}
+
+promedioEdades = suma / Arraypersonas.length;
+return promedioEdades
