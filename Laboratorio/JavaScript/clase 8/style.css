@@ -1,0 +1,13 @@
+table{
+    width: 80%;
+
+}
+
+tr td{
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.oculto{
+    display: none;
+}
+

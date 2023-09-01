@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list"></ul>
+    <input type="text" id="textItem">
+    <button id="agregar" onclick="agregarElement()">Agregar</button>
+
+    <br> <br>
+<!--Elementos de la Lista-->
+    <br>
+    <input type="text" id="listInput">
+    <div id="addElements">
+        <button type="button"  onclick="addButtonList()">Agregar Elementos</button>
+    </div>
+    <div id="updateElements" class="oculto">
+        <button type="button" onclick="modificarButton()">Modificar Elementos</button>
+        <button type="button" onclick="showButton(1)">Cancelar</button>
+    </div>
+    <br>
+    <table>
+        <thead>
+            <th>Elementos</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody id="listadoElementos">
+            <tr>
+                <td colspan="2">Sin registro</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+<script src="index.js"></script>
+</html>
