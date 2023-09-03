@@ -33,6 +33,7 @@ const addFormPersona = () =>{
     estatus.value= "";
 
     document.getElementById("listadoPersonas").innerHTML= listPerson(dataPersona);
+    storeageLisTpersona();
     mensajeAlerta("Datos guardados correctamente");
     console.table(dataPersona);
     
@@ -46,7 +47,7 @@ const listPerson = (dataPersona) =>{
                 <td>${person.birthay}</td>
                 <td>${person.adress}</td>
                 <td>${person.estatus}</td>
-                <td><button type="button" onclick="deleteRegistroPersona(${index})">Eliminar</button></td>
+                <td><button type="button" onclick="deleteRegistroPersona(${person.dni})">Eliminar</button></td>
                 </tr>`;
     
     });
@@ -66,10 +67,18 @@ const filterDataPersona = (search) => {
         return person.firstName.toLowerCase().includes(search)
     })
 }
-
-const deleteRegistroPersona = (position) =>{
+//para que filtre y elimine por dni y no por posicion
+const deleteRegistroPersona = (dni) =>{
+    let position = filterDni(dni,dataPersona)
     dataPersona.splice(position,1);
     document.getElementById("listadoPersonas").innerHTML= listPerson(dataPersona);
+    storeageLisTpersona()
+}
+
+const filterDni = (dni,dataPersona) => {
+    return dataPersona.findIndex((person)=>{
+        return person.dni  == parseInt(dni)
+    })
 }
 
 const mensajeAlerta = (title,icon='success') => {
@@ -79,6 +88,21 @@ Swal.fire({
     title: title,
     showConfirmButton: false,
     timer: 900})} 
+
+const storeageLisTpersona = () =>{
+    let stringObj = JSON.stringify(dataPersona);
+    localStorage.setItem("person",stringObj);
+}
+const listStoraListPerson = () => {
+    let objectaString = localStorage.getItem("person");
+    //si objectString es diferente de nulo osea que si encuentre algo guardado que haga lo siguiente
+    if(objectaString != null){
+        objectaString = JSON.parse(objectaString);
+        dataPersona = objectaString
+        document.getElementById("listadoPersonas").innerHTML= listPerson(dataPersona);
+    }
+}
+listStoraListPerson()
 
 // Hacer required el formulario//
 
